@@ -1,0 +1,87 @@
+<!-- declaracion q permite decir al browser que version de html se usa-->
+<!DOCTYPE html>
+<!--elemento raiz-->
+<html lang="es">
+  <head>
+    <title>AppDeGatos</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <h2>AppDeGatos</h2>
+    <main> 
+      <h3>Imágenes de Gatos:</h3>
+      <p>Haz click <a href="https://www.freecodecamp.org/espanol/" target="_blank" rel="noopener noreferrer">para ver las imágenes.</a></p>
+      <img src="https://bit.ly/fcc-relaxing-cat" alt="Gato naranja recostado."><br>
+      <img src="imagenes/gatito-bebe.jpg" alt="Gato bebe naranja mirando la cámara.">   
+      <hr><!--hace una linea horizontal en la pagina-->
+      
+      <h3>Listas de Gatos</h3>
+      
+      <div>
+        <p>Cosas que los gatos <em>aman</em>:</p><!--em = cursiva-->
+        <ul><!--etiqueta que significa lista no ordenada y hay que especificar cada elemento de la lista con la etiqueta li -->
+          <li>Menta gatuna</li>
+          <li>Punteros laser</li>
+          <li><s>Lasaña</s></li><!--s = texto tachado-->
+        </ul>
+        <img src="imagenes/lasana.jpg" alt="Lasaña">
+        
+        <p>Cosas que los gatos <strong>odian</strong>:</p><!--strong = negrita-->
+        <ol><!--etiqueta que singifica lista ordenada-->
+          <li>Tratamiento antipulgas</li>
+          <li>Truenos</li>
+          <li>Otros gatos</li>
+        </ol>
+      </div>
+      <img src="imagenes/gatos.jpg">
+
+      <form action="/enviar-respuesta"> <!--el action llevaria a algun servidor si existiera una vez que apreta el boton-->
+        <!--botones de radio-->
+        <label for="interior">
+          <input id="interior" type="radio" name="interior-exterior">Interior
+        </label><br>
+        <label for="exterior">
+          <input id="exterior" type="radio" name="interior-exterior">Exterior
+        </label><br>
+        <!--casilla de verificacion-->
+        <label for="carinoso">
+          <input id="carinoso" type="checkbox">Cariñoso
+        </label>
+        <label for="perezoso">
+          <input id="perezoso" type="checkbox">Perezoso
+        </label>
+        <label for="energico">
+          <input id="energico" type="checkbox">Energico
+        </label>
+        <!--texto y boton enviar-->
+        <input type="text" placeholder="URL de la foto de tu gato" required>
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
+    <footer><!--pie de pagina a la q podria agregar una referencia, con la etiqueta a-->
+      <p><small>Primera pagina web</small></p>
+    </footer>
+  </body>
+</html>
+<!-- 
+  en esta parte se crea una referencia entre un parrafo y el titulo para que al presionar
+  la palabra me lleve a la parte de la pagina en donde esta ese titulo
+  <a href="#parrafo-1">Párrafo 1</a>
+  <a href="#parrafo-2">Párrafo 2</a>
+  <a href="#parrafo-3">Párrafo 3</a>
+  
+  <h3 id="parrafo-1">Párrafo 1</h3>
+  <p>No cabe duda que los gatos son una excelente compañía. Son perfectos cómplices para las personas que buscan
+    un compañero con quien descansar, que le guste pasar momentos tranquilos y sobretodo aquel que busca un amigo 
+    fiel. Muchos artistas afirman que son la mejor compañía y, a veces, una gran inspiración.</p>
+      
+  <h3 id="parrafo-2">Párrafo 2</h3>
+  <p>Sabemos que la familia de los gatos se ha desarrollado y se ha diversificado desde hace muchos años atrás. 
+    Los felinos son muy fáciles de distinguir por sus cualidades, características e incluso por sus hábitos. 
+    Además, son los únicos animales que han decidido domesticarse por sí solos.</p>
+
+  <h3 id="parrafo-3">Párrafo 3</h3>
+  <p>Los gatos se comunican a través de vocalizaciones y entre ellas la más popular es el maullido. También, cabe
+    mencionar que, junto con el perro, son los animales más populares para escoger como mascota, debido a su 
+    adaptabilidad y características. </p>
+-->  
